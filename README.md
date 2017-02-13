@@ -1,5 +1,5 @@
 # ButterTrace 
-A small script that uses ARP spoofing in order to sniff all network traffic originating from the target device. This script essentially acts as a wrapper that brings arpspoof and tcpdump together, asks you for the IP addresses required in order to perform the attack then output a logfile based on traffic received from the target system.
+A small Bash script that uses ARP spoofing in order to sniff all network traffic originating from the target device. This script essentially acts as a wrapper that brings arpspoof and tcpdump together, asks you for the IP addresses required in order to perform the attack then output a logfile based on traffic received from the target system.
 
 This script essentially allows you to perform a Man-in-the-Middle attack on the target machine. Only use this script on systems you have permission to run these types of actions on. Do NOT use this script for illegal purposes. This script was designed for education and penetration testing purposes. It is a very good tool for monitoring what a particular system is doing.
 
@@ -21,4 +21,7 @@ Requirements
  - grep
  - IP Forwarding enabled
 
-INSTRUCTIONS FOR USE: Run the script - sudo ./buttertrace.sh then answer the questions it asks you. All network traffic from the target machine will be logged in the log file 'tcpdump-$target.txt' 
+INSTRUCTIONS FOR USE
+=====================
+Run the script - sudo ./buttertrace.sh then answer the questions it asks you. 
+All network traffic from the target machine will be logged in the log file 'tcpdump-$target.txt' 
