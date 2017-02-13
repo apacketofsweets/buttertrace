@@ -21,7 +21,7 @@ Requirements
  - grep
  - IP Forwarding enabled
 
-INSTRUCTIONS FOR USE
+Instructions for use
 =====================
 Run the script - sudo ./buttertrace.sh then answer the questions it asks you. 
 All network traffic from the target machine will be logged in the log file 'tcpdump-$target.txt' 
