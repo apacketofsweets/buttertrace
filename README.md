@@ -14,6 +14,8 @@ IMPORTANT! It is highly recommended that IP Forwarding is enabled on the system 
 On most Unix/Linux systems you can enable IP Forwarding by amending the below file: 
 /proc/sys/net/ipv4/ip_forward - setting it from 0 to 1 will enable forwarding. It is YOUR responsiblity to ensure it is safe to enable IP forwarding on your system.
 
+Compatible with POSIX systems - Linux, BSD, Solaris etc.
+
 Requirements
 =============
  - arpspoof
