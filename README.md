@@ -7,4 +7,4 @@ Admin privileges are required to run this script. This script also depends on th
 ## Wiki:
 * [Instructions for use](https://github.com/apacketofsweets/ButterTrace/wiki/Instructions-for-use)
 * [Requirements](https://github.com/apacketofsweets/ButterTrace/wiki/Requirements)
-* [Disclaimer]https://github.com/apacketofsweets/ButterTrace/wiki/Disclaimer
+* [Disclaimer](https://github.com/apacketofsweets/ButterTrace/wiki/Disclaimer)
