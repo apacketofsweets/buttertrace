@@ -1,32 +1,8 @@
-# ButterTrace 
-A small Bash script that uses ARP spoofing in order to sniff all network traffic originating from the target device. This script essentially acts as a wrapper that brings arpspoof and tcpdump together, it asks you for the IP addresses required in order to perform the attack then outputs a logfile based on traffic received from the target system.
+A small Bash script that uses ARP spoofing in order to sniff all network traffic originating from the target device. This script acts as a wrapper that brings arpspoof and tcpdump together, it asks you for the IP addresses required in order to perform the attack then outputs a logfile based on traffic received from the target system. This script essentially allows you to perform a Man-in-the-Middle attack on the target machine.
 
-This script essentially allows you to perform a Man-in-the-Middle attack on the target machine. 
+Admin privileges are required to run this script. This script also depends on the commands 'arpspoof' and 'tcpdump' executing their respective applications, this occurs as default with most pentesting distributions.
 
-Admin priviliges are required to run this script.
-
-This script depends on the commands 'arpspoof' and 'tcpdump' executing their respective applications, this occurs as default with most pentesting distributions.
-
-When this script closes, it will terminate all spoofing and packet monitoring. If you require this script to continue running in the background, please use a tool such as 'screen'.
-
-<b>IMPORTANT!</b> It is highly recommended that IP Forwarding is enabled on the system running this script, otherwise the packets from the target system will not hit its destination - e.g. target system tries to visit a website, it fails because the packets are dying when they hit this system. IP Forwarding enabled will allow traffic to pass to its intended destination once its hit the system.
-
-On most Unix/Linux systems you can enable IP Forwarding by amending the below file: 
-`/proc/sys/net/ipv4/ip_forward` - setting it from 0 to 1 will enable forwarding. It is <b>YOUR</b> responsiblity to ensure it is safe to enable IP forwarding on your system.
-
-Compatible with POSIX systems - Linux, BSD, Solaris etc.
-
-## Requirements
- * arpspoof
- * tcpdump
- * grep
- *IP Forwarding enabled
-
-## Instructions for use
-
-Run the script - `sudo ./buttertrace.sh` then answer the questions it asks you. 
-All network traffic from the target machine will be logged in the log file 'tcpdump-$target.txt' 
-
-## Disclaimer
-
-Only use this script on systems you have permission to run these types of actions on. Do <b>NOT</b> use this script for illegal purposes. This script was designed for education and penetration testing purposes. It is a very good tool for monitoring what a particular system is doing.
+## Wiki:
+* [Instructions for use](https://github.com/apacketofsweets/ButterTrace/wiki/Instructions-for-use)
+* [Requirements](https://github.com/apacketofsweets/ButterTrace/wiki/Requirements)
+* [Disclaimer]https://github.com/apacketofsweets/ButterTrace/wiki/Disclaimer
